@@ -17,9 +17,10 @@
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aluXXXXXXX/STW03/issues"
+    "url": "https://github.com/marrero-"
   },
-  "homepage": "https://github.com/aluXXXXXXX/STW03",
+  "homepage": "https://marrero-.github.io/",
   "devDependencies": {
+		"gulp": "~3.8.10"
   }
 }
