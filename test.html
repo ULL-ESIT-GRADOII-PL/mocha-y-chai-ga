@@ -18,21 +18,6 @@
   <link rel="icon" type="image/png" href="assets/images/thermometer.png">
 </head>
 <body>
-  <div class="container app">
-    <h4>Conversor de temperatura</h4>
-    <div class="row">
-      <div class="one-half column">
-        <p>Este conversor te permite hacer conversiones de Temperaturas (Celsius, Farenheit y Kelvin) Ejemplo: 23C to F para convertir de grados Celsius a grados Farenheit.</p>
-        <label>Introduzca un valor</label>
-        <input id="convert" class="u-full-width" type="text" autofocus placeholder="Introduzca un valor">
-				<button type="button" onclick="main();">Convert!</button>
-        <span id="converted"></span>
-      </div>
-      <div class="one-half column">
-        <a href="https://github.com/ULL-ESIT-GRADOII-PL/object-oriented-programming-in-js-gabriel_alejandro.git"><img src="assets/images/github_octocat.png" alt=""></a>
-      </div>
-    </div>
-  </div>
   <div id="mocha"></div>
   <div id="messages"></div>
   <div id="fixtures"></div>
@@ -44,19 +29,7 @@
 	<script type="text/javascript" src="assets/js/main.js"></script>
   <script>mocha.setup('bdd')</script>
 	<script src="test/medida_test.js"></script>
-  <script type="text/javascript" src="test/temperatura_test.js"></script>	
+  <script type="text/javascript" src="test/temperatura_test.js"></script>
 	<script>mocha.run();</script>
-  <footer>
-      <div class="container">
-        <div class="row">
-          <div class="two columns">
-            <a href="https://alu0100819786.github.io">Gabriel Melián</a>
-            </div>
-            <div class="two columns">
-            <a href="https://marrero-.github.io/">Alejandro Marrero</a>
-          </div>
-        </div>
-      </div>
-  </footer>
 </body>
 </html>

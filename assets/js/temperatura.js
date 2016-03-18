@@ -39,7 +39,7 @@ function Farenheit(valor) {
 Farenheit.prototype = Object.create(Temperatura.prototype);
 
 Farenheit.prototype.toCelsius = function () {
-	return new Celius((this.valor - 32) * (5/9));
+	return new Celsius((this.valor - 32) * (5/9));
 	//var result = (this.valor - 32) * 5/9;
   //return result;
 }

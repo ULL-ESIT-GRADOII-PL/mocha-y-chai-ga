@@ -1,8 +1,8 @@
 (function(exportar){
 	"user strict";
 	function Medida(valor,tipo) {
-		var regexp = XRegExp('^(?<number> [+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?\\s*) # 	valor \n\
-													 (?<tipo> [\w])   #type for number','xi');
+		var regexp = XRegExp('^(?<numero>[+-]?\\d+(\\.\\d+)?([e][+-]?\\d+)?[ ]*) # valor \n\
+													 (?<tipo>[cfk])   #type for number  ','xi');
 		if(tipo) {
 			this.valor = valor;
 			this.tipo = tipo;
@@ -10,7 +10,7 @@
 		else {
 			console.log("Given args: " + valor);
 			var match = XRegExp.exec(valor,regexp);
-				this.valor = match.number;
+				this.valor = parseFloat(match.numero);
 				this.tipo = match.tipo;
 			}
 	}
